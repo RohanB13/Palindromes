@@ -1,0 +1,24 @@
+import java.util.*;
+ 
+class Palindromes
+{
+   public static void main(String args[])
+   {
+      String Pal, reverse = "";
+      Scanner in = new Scanner(System.in);
+ 
+      System.out.println("Enter an input for the system to detect whether it is a palindrome or not: ");
+      Pal = in.nextLine();
+ 
+      int length = Pal.length();
+ 
+      for ( int i = length - 1; i >= 0; i-- )
+         reverse = reverse + Pal.charAt(i);
+ 
+      if (Pal.equals(reverse))
+         System.out.println("Entered input is a palindrome.");
+      else
+         System.out.println("Entered input is not a palindrome.");
+ 
+   }
+}	
